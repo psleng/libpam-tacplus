@@ -4,9 +4,11 @@ Priority: extra
 Build-Depends: debhelper (>= 9), libpam-dev, dh-autoreconf, autoconf-archive, libaudit-dev,
     libtacplus-map-dev, git, libssl-dev
 Maintainer: dev-support <dev-support@cumulusnetworks.com>
-Standards-Version: 3.9.6
-#Homepage: https://github.com/jeroennijhof/pam_tacplus
+Standards-Version: 3.9.8
 Homepage: http://www.cumulusnetworks.com
+XS-Build-Source: True
+XS-Cumulus-Valid-Arch: amd64 armel
+XBCS-Vcs-Hash: 1b6c1f14cc288b71c6c7005a60d2d7d7b617f6a0
 
 Package: libpam-tacplus
 Architecture: any
@@ -15,6 +17,7 @@ Description: PAM module for using TACACS+ as an authentication service
  This PAM module support authentication, authorization (account management) and
  accounting (session management) performed using TACACS+ protocol designed by
  Cisco.
+XBCS-Vcs-Hash: 1b6c1f14cc288b71c6c7005a60d2d7d7b617f6a0
 
 Package: libpam-tacplus-dev
 Section: libdevel
@@ -22,26 +25,30 @@ Architecture: any
 Depends: ${misc:Depends}, libpam-tacplus (= ${binary:Version}), libc6-dev|libc-dev
 Description: Development files for PAM module for using TACACS+ authentication
  Provides header files for development with libpam-tacplus
+XBCS-Vcs-Hash: 1b6c1f14cc288b71c6c7005a60d2d7d7b617f6a0
 
 Package: libtac2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libaudit1
-Description: TACACS+ protocol library 
+Description: TACACS+ protocol library
  This library implemenents the fundamentls of the TACACS+ protocol and supports
  authentication, authorization (account management) and accounting (session
  management).
+XBCS-Vcs-Hash: 1b6c1f14cc288b71c6c7005a60d2d7d7b617f6a0
 
 Package: libtac2-bin
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: TACACS+ client program
  Simple command-line client for TACACS+ testing and scripting
+XBCS-Vcs-Hash: 1b6c1f14cc288b71c6c7005a60d2d7d7b617f6a0
 
 Package: libtac-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libtac2 (= ${binary:Version}), libc6-dev|libc-dev
-Description: Development files for TACACS+ protocol library 
+Description: Development files for TACACS+ protocol library
  Contains C header files and development files for libtac, a TACACS+ protocol
  implementation.
+XBCS-Vcs-Hash: 1b6c1f14cc288b71c6c7005a60d2d7d7b617f6a0
 

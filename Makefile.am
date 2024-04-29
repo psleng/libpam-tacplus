@@ -84,6 +84,8 @@ MAINTAINERCLEANFILES = Makefile.in config.h.in configure aclocal.m4 \
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = libtac.pc
 
+$(bin_PROGRAMS) $(module_LTLIBRARIES): $(lib_LTLIBRARIES)
+
 clean-generic:
 	rm -rf autom4te*.cache
 	rm -f *.rej *.orig *.lang

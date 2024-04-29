@@ -1,3 +1,16 @@
+libpam-tacplus (1.4.3-cl5.1.0u5) RELEASED; urgency=medium
+
+  * new build for 5.1.0 from original hash
+    1b6c1f14cc288b71c6c7005a60d2d7d7b617f6a0
+
+ -- root <root@3da22e72fb7c>  Tue, 01 Feb 2022 01:44:06 +0000
+
+libpam-tacplus (1.4.3-cl4u1) RELEASED; urgency=medium
+
+   * First 4.0 release
+
+ -- dev-support <dev-support@cumulusnetworks.com>  Mon, 30 Sep 2019 16:49:57 -0700
+
 libpam-tacplus (1.4.3-cl3u4) RELEASED; urgency=low
   * Closes: CM-23004 - local account password was allowed even when
   TACACS+ server could be reached and was authoritative for the accountname

@@ -34,7 +34,6 @@ AM_PROG_CC_C_O
 dnl --------------------------------------------------------------------
 dnl Checks for libraries, but don't use -lpam for everything
 AC_CHECK_LIB(pam, pam_start, HAVE_LIBPAM=1)
-AC_CHECK_LIB(logwtmp)
 
 case "$host" in
 	sparc-* | sparc64-*)
